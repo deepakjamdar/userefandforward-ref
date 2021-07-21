@@ -40,6 +40,10 @@ function App() {
     }
   }
 
+  const handleSubmit = () => {
+    
+  }
+
   return (
     <div className="App">
       <input type="text" onKeyDown={firstKeyDown} ref={firstNameRef} placeholder="enter first name" />
@@ -50,8 +54,7 @@ function App() {
 
       <Input type="text" onKeyDown={firstKeyDownfwd} ref={firstNamefwdRef} placeholder="enter first name" />
       <Input type="text" onKeyDown={lastKeyDownfwd} ref={lastNamefwdRef} placeholder="enter last name" />
-      <button ref={submitReffwd}>Submit</button>
-
+      <button ref={submitReffwd} onClick={handleSubmit}>Submit</button>
 
     </div>
   );
